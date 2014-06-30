@@ -26,7 +26,7 @@
         <link rel="alternate" type="application/atom+xml" title="Atom 0.3" href="<?php bloginfo('atom_url'); ?>" />
         <?php
 			wp_enqueue_script('jquery');
-			wp_enqueue_script('lazyload', get_template_directory_uri() . '/js/jquery.lazyload.mini.js', 'jquery', false);
+			//wp_enqueue_script('lazyload', get_template_directory_uri() . '/js/jquery.lazyload.mini.js', 'jquery', false);
             wp_enqueue_script('script', get_template_directory_uri() . '/js/script.js', 'jquery', false);
 		?>
         <?php wp_head(); ?>
