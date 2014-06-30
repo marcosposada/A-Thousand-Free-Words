@@ -32,10 +32,6 @@ jQuery.noConflict();
         focus.focusout(function(){
             $(this).removeAttr('style');
         });
-        
-        $('.post img').lazyload({ 
-            effect : "fadeIn"
-        });
 
 
         $('.single .post_content p:first').each(function() {
