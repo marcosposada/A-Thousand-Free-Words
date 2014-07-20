@@ -1,3 +1,11 @@
 .header {
   @include grid-row();
+  .site-name {
+    @include grid-column(12);
+    a {
+      font-size: $h1-font-size;
+      padding: 1rem 0;
+      display: block;
+    }
+  }
 }
