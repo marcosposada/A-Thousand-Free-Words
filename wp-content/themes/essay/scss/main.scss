@@ -1,0 +1,7 @@
+main[role="main"] {
+  @include grid-row();
+}
+
+section {
+  @include grid-column(8);
+}
