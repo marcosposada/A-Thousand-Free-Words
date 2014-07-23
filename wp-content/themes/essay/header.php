@@ -29,16 +29,9 @@
 			<header class="header" role="banner">
 
 				<div class="site-name">
-                    <a href="<?php bloginfo('home'); ?>">A thousand free words <br /><span>(or less)</span></a>
+                    <a href="<?php bloginfo('home'); ?>">
+                        A thousand free words<span>(or less)</span>
+                    </a>
 				</div>
-
-
-
-                <!-- nav -->
-                <nav class="nav" role="navigation">
-                    <?php html5blank_nav(); ?>
-                </nav>
-                <!-- /nav -->
-
 			</header>
 			<!-- /header -->

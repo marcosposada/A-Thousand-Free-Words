@@ -1,7 +1,7 @@
 @import "settings";
 //@import "foundation";
-
-// Or selectively include components
+@import "variables";
+@import "../bower_components/fontawesome/scss/font-awesome";
  @import
 //   "foundation/components/accordion",
 //   "foundation/components/alert-boxes",
@@ -44,3 +44,4 @@
 @import "main";
 @import "sidebar";
 @import "footer";
+@import "post";

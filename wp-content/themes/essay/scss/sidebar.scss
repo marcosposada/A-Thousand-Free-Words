@@ -1,3 +1,42 @@
 aside.sidebar {
-  @include grid-column(4);
+  @include grid-column(12);
+  background-color: dimgray;
+  color: white;
+  @media #{$medium-up} {
+    @include grid-column(3);
+    background-color: white;
+  }
+  h3 {
+    border-top: 1px solid #000000;
+    margin: 0 0 0.5em 0;
+    padding-top: 0.5em;
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  .widget_text {
+    margin-bottom: 1em;
+  }
+  .textwidget {
+    p {
+      font-size: 0.9em;
+      line-height: 1.5em;
+      font-family: Georgia;
+      color: black;
+    }
+
+
+    i {
+      color: black;
+      font-size: 2.7em;
+      transition: color 0.2s ease-in;
+      cursor: pointer;
+      &:hover {
+        color: gray;
+      }
+    }
+
+
+  }
+
 }
