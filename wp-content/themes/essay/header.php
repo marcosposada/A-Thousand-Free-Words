@@ -30,7 +30,7 @@
 
 				<div class="site-name">
                     <a href="<?php bloginfo('home'); ?>">
-                        A thousand free words<span>(or less)</span>
+                        A thousand free words
                     </a>
 				</div>
 			</header>

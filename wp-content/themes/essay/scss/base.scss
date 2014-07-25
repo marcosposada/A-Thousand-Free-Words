@@ -1,1 +1,6 @@
-
+a {
+  color: black;
+  &:hover {
+    color: dimgray;
+  }
+}

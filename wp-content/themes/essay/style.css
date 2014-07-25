@@ -3083,6 +3083,11 @@ blockquote p {
 
   .show-for-print {
     display: inherit !important; } }
+a {
+  color: black; }
+  a:hover {
+    color: dimgray; }
+
 .header {
   width: 100%;
   margin-left: auto;
@@ -3118,9 +3123,6 @@ blockquote p {
         width: 75%;
         float: right;
         float: left;
-        margin-left: auto;
-        margin-right: auto;
-        float: none;
         text-align: center; }
         .header .site-name a {
           text-align: left; }
@@ -3170,23 +3172,26 @@ aside.sidebar {
   aside.sidebar h3 {
     border-top: 1px solid #000000;
     margin: 0 0 0.5em 0;
-    padding-top: 0.5em; }
+    padding-top: 0.5em;
+    font-size: 1.125rem; }
     aside.sidebar h3:first-child {
       margin-top: 0; }
   aside.sidebar .widget_text {
     margin-bottom: 1em; }
-  aside.sidebar .textwidget p {
-    font-size: 0.9em;
-    line-height: 1.5em;
-    font-family: Georgia;
-    color: black; }
-  aside.sidebar .textwidget i {
-    color: black;
-    font-size: 2.7em;
-    transition: color 0.2s ease-in;
-    cursor: pointer; }
-    aside.sidebar .textwidget i:hover {
-      color: gray; }
+  aside.sidebar .textwidget {
+    padding: 0.5em 0; }
+    aside.sidebar .textwidget p {
+      font-size: 0.9em;
+      line-height: 1.5em;
+      font-family: Georgia;
+      color: black; }
+    aside.sidebar .textwidget i {
+      color: black;
+      font-size: 2.7em;
+      transition: color 0.2s ease-in;
+      cursor: pointer; }
+      aside.sidebar .textwidget i:hover {
+        color: gray; }
 
 footer {
   width: 100%;
@@ -3194,12 +3199,18 @@ footer {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  max-width: 62.5rem; }
+  max-width: 62.5rem;
+  border-top: 1px solid black; }
   footer:before, footer:after {
     content: " ";
     display: table; }
   footer:after {
     clear: both; }
+  footer .copyright {
+    font-size: 60%;
+    font-family: sans-serif;
+    margin: 0.5em 0;
+    text-align: right; }
 
 article {
   border-top: 1px solid black;
@@ -3211,22 +3222,59 @@ article {
   border-top: 1px solid black;
   margin-right: 1em;
   width: 25%;
-  padding-top: 1em; }
+  padding: 1em 0; }
   .title h2 {
-    font-size: 1em; }
+    font-size: 1.5em;
+    line-height: 1.2em; }
     .title h2:first-child {
       margin-top: 0; }
 
-.post .date, .post .author {
-  font-size: 60%;
-  display: block;
-  margin: -5px 0 10px 0;
-  font-family: sans-serif; }
-.post p {
-  font-family: Georgia;
-  font-weight: lighter;
-  text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
-  font-size: 100%;
-  line-height: 1.8em; }
+.post-categories {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+  .post-categories li a {
+    border-bottom: 1px dotted black;
+    font-size: 60%; }
+
+.post {
+  padding-bottom: 1em; }
+  .post .date, .post .author {
+    font-size: 60%;
+    display: block;
+    margin: -5px 0 10px 0;
+    font-family: sans-serif; }
+  .post p {
+    font-family: Georgia;
+    font-weight: lighter;
+    text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
+    font-size: 100%;
+    line-height: 1.8em; }
+  .post .read-more {
+    font-size: 100%;
+    border-bottom: 1px dotted black;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    display: inline; }
+
+.single article {
+  padding-left: 0.9375rem;
+  padding-right: 0.9375rem;
+  width: 100%;
+  float: left; }
+.single .post {
+  padding: 0.5em 0 0 0; }
+  .single .post .first-big {
+    float: left;
+    margin: 3px 15px 1px 0;
+    line-height: 1em;
+    font-size: 5em; }
+  .single .post h1 {
+    margin-bottom: 0.75em; }
+
+.comments-wrapper {
+  border-top: 1px solid black;
+  padding-top: 1em;
+  margin: 1em 0; }
 
 /*# sourceMappingURL=style.css.map */

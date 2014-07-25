@@ -11,17 +11,12 @@
 		<?php //endif; ?>
 		 /post thumbnail -->
 
-		<!-- post title -->
-
-		<!-- /post title -->
-
-		<!-- post details -->
-
-
-
-        <!-- /post details -->
 
 		<?php html5wp_excerpt('html5wp_index'); // Build your custom callback length in functions.php ?>
+
+        <a class="read-more" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
+            Read more
+        </a>
 
 		<?php edit_post_link(); ?>
 

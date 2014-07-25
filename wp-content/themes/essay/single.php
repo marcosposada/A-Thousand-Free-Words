@@ -30,13 +30,14 @@
 
 			<?php the_content(); // Dynamic Content ?>
 
-            <!-- post details -->
-            <span class="date"><?php the_time('F j, Y'); ?> <?php the_time('g:i a'); ?></span>
+
 
 			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
 
-
+            <div class="comments-wrapper">
+                <?php comments_template(); ?>
+            </div>
 
 
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
