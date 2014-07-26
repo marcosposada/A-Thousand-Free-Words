@@ -40,6 +40,12 @@ article {
 }
 .post {
   padding-bottom: 1em;
+  .post-thumbnail {
+    margin-bottom: 0.5em;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
   .date, .author {
     font-size: $small-font-size;
     display: block;
