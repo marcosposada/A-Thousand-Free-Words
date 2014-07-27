@@ -11,9 +11,9 @@
 
 			<!-- post thumbnail -->
 			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-					<?php the_post_thumbnail(); // Fullsize image for the single post ?>
-				</a>
+
+			    <?php the_post_thumbnail(); // Fullsize image for the single post ?>
+
 			<?php endif; ?>
 			<!-- /post thumbnail -->
 
@@ -35,9 +35,7 @@
 			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>'); // Separated by commas with a line break at the end ?>
 
 
-            <div class="comments-wrapper">
-                <?php comments_template(); ?>
-            </div>
+
 
 
 			<?php edit_post_link(); // Always handy to have Edit Post Links available ?>
@@ -46,6 +44,9 @@
 
 		</article>
 		<!-- /article -->
+        <div class="comments-wrapper">
+            <?php comments_template(); ?>
+        </div>
 
 	<?php endwhile; ?>
 

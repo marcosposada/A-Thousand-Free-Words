@@ -1,5 +1,5 @@
 article {
-  border-top: 1px solid black;
+
   &:last-child {
 
   }
@@ -8,22 +8,32 @@ article {
 
 
   }
-  width: 70%;
-  float: right;
+  width: 100%;
+
+  @media #{$medium-up} {
+    float: right;
+    border-top: 1px solid black;
+    width: 70%;
+  }
 }
 
 .title {
   border-top: 1px solid black;
   margin-right: 1em;
-  width: 25%;
-  padding: 1em 0;
+  width: 100%;
 
+
+  padding: 1em 0;
   h2 {
     font-size: 1.5em;
     line-height: 1.2em;
     &:first-child {
       margin-top: 0;
     }
+  }
+  @media #{$medium-up} {
+    width: 25%;
+    float: left;
   }
 }
 
@@ -58,13 +68,27 @@ article {
     text-shadow: 0px 2px 2px rgba(255, 255, 255, 0.4);
     font-size: $base-font-size;
     line-height: 1.8em;
+
   }
   .read-more {
     font-size: $base-font-size;
-    border-bottom: 1px dotted black;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    display: inline;
+    border: 1px dotted black;
+    padding: 0.5em 2em;
+
+    margin: 0.5em auto;
+    border-radius: 5px;
+    float: right;
+    display: inline-block;
+    transition: background-color 0.2s linear;
+    &:hover, &:active, &:focus {
+      background-color: black;
+      color: white;
+    }
+  }
+  @media #{$medium-up} {
+
+
+
   }
 }
 
@@ -74,6 +98,11 @@ article {
   }
   .post {
     padding: 0.5em 0 0 0;
+    .wp-post-image {
+      max-width: 100%;
+      margin: 1em auto 0 auto;
+      display: block;
+    }
     .first-big {
       float: left;
       margin: 3px 15px 1px 0;
@@ -82,7 +111,7 @@ article {
       font-size: 5em;
     }
     h1 {
-      margin-bottom: 0.75em;
+      margin: 0.75em 0;
     }
   }
 }

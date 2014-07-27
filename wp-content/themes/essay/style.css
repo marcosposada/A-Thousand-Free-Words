@@ -3712,38 +3712,48 @@ aside.sidebar {
   padding-right: 0.9375rem;
   width: 100%;
   float: left;
-  background-color: dimgray;
+  background-color: black;
   color: white; }
-  @media only screen and (min-width: 40.063em) {
-    aside.sidebar {
-      padding-left: 0.9375rem;
-      padding-right: 0.9375rem;
-      width: 25%;
-      float: left;
-      background-color: white; } }
   aside.sidebar h3 {
-    border-top: 1px solid #000000;
+    border-top: 1px solid white;
     margin: 0 0 0.5em 0;
     padding-top: 0.5em;
-    font-size: 1.125rem; }
+    font-size: 1.125rem;
+    color: white; }
     aside.sidebar h3:first-child {
       margin-top: 0; }
   aside.sidebar .widget_text {
     margin-bottom: 1em; }
   aside.sidebar .textwidget {
     padding: 0.5em 0; }
-    aside.sidebar .textwidget p {
-      font-size: 0.9em;
-      line-height: 1.5em;
-      font-family: Georgia;
+  aside.sidebar p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    font-family: Georgia;
+    color: white; }
+  aside.sidebar i {
+    color: white;
+    font-size: 2em;
+    transition: color 0.2s ease-in;
+    cursor: pointer; }
+    aside.sidebar i:hover {
+      color: #1a1a1a; }
+  @media only screen and (min-width: 40.063em) {
+    aside.sidebar {
+      padding-left: 0.9375rem;
+      padding-right: 0.9375rem;
+      width: 25%;
+      float: left;
+      background-color: white;
       color: black; }
-    aside.sidebar .textwidget i {
-      color: black;
-      font-size: 2em;
-      transition: color 0.2s ease-in;
-      cursor: pointer; }
-      aside.sidebar .textwidget i:hover {
-        color: gray; }
+      aside.sidebar h3, aside.sidebar p {
+        color: black; }
+      aside.sidebar h3 {
+        border-color: black; }
+      aside.sidebar i {
+        color: black; }
+        aside.sidebar i:hover {
+          color: #1a1a1a; } }
 
 footer {
   width: 100%;
@@ -3763,23 +3773,35 @@ footer {
     font-family: sans-serif;
     margin: 0.5em 0;
     text-align: right; }
+  @media only screen and (min-width: 40.063em) {
+    footer .copyright {
+      background-color: white;
+      border-color: black;
+      color: white; } }
 
 article {
-  border-top: 1px solid black;
   padding-top: 1em;
-  width: 70%;
-  float: right; }
+  width: 100%; }
+  @media only screen and (min-width: 40.063em) {
+    article {
+      float: right;
+      border-top: 1px solid black;
+      width: 70%; } }
 
 .title {
   border-top: 1px solid black;
   margin-right: 1em;
-  width: 25%;
+  width: 100%;
   padding: 1em 0; }
   .title h2 {
     font-size: 1.5em;
     line-height: 1.2em; }
     .title h2:first-child {
       margin-top: 0; }
+  @media only screen and (min-width: 40.063em) {
+    .title {
+      width: 25%;
+      float: left; } }
 
 .post-categories {
   list-style: none;
@@ -3809,10 +3831,16 @@ article {
     line-height: 1.8em; }
   .post .read-more {
     font-size: 100%;
-    border-bottom: 1px dotted black;
-    margin-top: 0;
-    margin-bottom: 0.5em;
-    display: inline; }
+    border: 1px dotted black;
+    padding: 0.5em 2em;
+    margin: 0.5em auto;
+    border-radius: 5px;
+    float: right;
+    display: inline-block;
+    transition: background-color 0.2s linear; }
+    .post .read-more:hover, .post .read-more:active, .post .read-more:focus {
+      background-color: black;
+      color: white; }
 
 .single article {
   padding-left: 0.9375rem;
@@ -3821,17 +3849,23 @@ article {
   float: left; }
 .single .post {
   padding: 0.5em 0 0 0; }
+  .single .post .wp-post-image {
+    max-width: 100%;
+    margin: 1em auto 0 auto;
+    display: block; }
   .single .post .first-big {
     float: left;
     margin: 3px 15px 1px 0;
     line-height: 1em;
     font-size: 5em; }
   .single .post h1 {
-    margin-bottom: 0.75em; }
+    margin: 0.75em 0; }
 
 .comments-wrapper {
   border-top: 1px solid black;
   padding-top: 1em;
-  margin: 1em 0; }
+  margin: 1em 0;
+  display: block;
+  float: left; }
 
 /*# sourceMappingURL=style.css.map */

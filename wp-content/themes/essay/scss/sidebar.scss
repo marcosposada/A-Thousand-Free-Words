@@ -1,40 +1,55 @@
 aside.sidebar {
   @include grid-column(12);
-  background-color: dimgray;
+  background-color: black;
   color: white;
-  @media #{$medium-up} {
-    @include grid-column(3);
-    background-color: white;
-  }
+
   h3 {
-    border-top: 1px solid #000000;
+    border-top: 1px solid white;
     margin: 0 0 0.5em 0;
     padding-top: 0.5em;
     font-size: $h5-font-size;
     &:first-child {
       margin-top: 0;
     }
+    color: white;
   }
   .widget_text {
     margin-bottom: 1em;
   }
   .textwidget {
     padding: 0.5em 0;
-    p {
-      font-size: 0.9em;
-      line-height: 1.5em;
-      font-family: Georgia;
-      color: black;
+
+  }
+  p {
+    font-size: 0.9em;
+    line-height: 1.5em;
+    font-family: Georgia;
+    color: white;
+  }
+  i {
+    color: white;
+    font-size: 2em;
+    transition: color 0.2s ease-in;
+    cursor: pointer;
+    &:hover {
+      color: #1a1a1a;
     }
+  }
+  @media #{$medium-up} {
+    @include grid-column(3);
+    background-color: white;
+    color: black;
+    h3, p {
+      color: black;
 
-
+    }
+    h3 {
+      border-color: black;
+    }
     i {
       color: black;
-      font-size: 2em;
-      transition: color 0.2s ease-in;
-      cursor: pointer;
       &:hover {
-        color: gray;
+        color: #1a1a1a;
       }
     }
 

@@ -37,7 +37,7 @@ jQuery.noConflict();
         $('.single .post_content p:first').each(function() {
             $(this).html(function (i, html)
             {
-                return html.replace(/^[^a-zA-Z]*([a-zA-Z])/g, '<h1 class="first-big">$1</h1>');
+                return html.replace(/^[^a-zA-Z]*([a-zA-Z])/g, '<h1 class="first-biga">$1</h1>');
             });
         });
     });
