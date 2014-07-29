@@ -4206,6 +4206,17 @@
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
+	"\/images\/favicon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2290,
+		"inputAbbreviatedPath": "\/images\/favicon.png",
+		"outputAbbreviatedPath": "\/images\/favicon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/index.php": {
 		"fileType": 8192,
 		"ignore": 0,

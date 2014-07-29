@@ -3659,7 +3659,7 @@ form {
     float: left; }
     .header .site-name a {
       font-size: 2.75rem;
-      padding: 1rem 0;
+      padding: 1rem 0 0rem 0;
       display: block;
       text-align: center;
       text-transform: uppercase; }
@@ -3860,6 +3860,15 @@ article {
     font-size: 5em; }
   .single .post h1 {
     margin: 0.75em 0 0.25em 0; }
+  .single .post .the-image {
+    border-bottom: 1px solid black;
+    padding-bottom: 0.25em; }
+  .single .post .thumbnail-caption {
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin: 1em 0;
+    font-size: 60%; }
 
 .comments-wrapper {
   border-top: 1px solid black;

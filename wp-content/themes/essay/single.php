@@ -11,9 +11,10 @@
 
 			<!-- post thumbnail -->
 			<?php if ( has_post_thumbnail()) : // Check if Thumbnail exists ?>
-
-			    <?php the_post_thumbnail(); // Fullsize image for the single post ?>
-
+                <div class="the-image">
+			        <?php the_post_thumbnail(); // Fullsize image for the single post ?>
+                    <?php the_post_thumbnail_caption(); ?>
+                </div>
 			<?php endif; ?>
 			<!-- /post thumbnail -->
 
