@@ -3640,12 +3640,12 @@ form {
     border-radius: 5px; }
 
 a i, i {
-  border-radius: 30px;
-  padding: 10px;
   background-color: black;
   color: white;
-  font-size: 20px !important;
-  box-sizing: content-box; }
+  font-size: 18px;
+  padding: 5px; }
+  a i:hover, i:hover {
+    background-color: #1a1a1a; }
 
 .circular {
   width: 75px;
@@ -3750,14 +3750,14 @@ aside.sidebar {
     line-height: 1.5em;
     font-family: Georgia;
     color: white; }
-  aside.sidebar i {
+  aside.sidebar a i, aside.sidebar i {
     color: black;
     background-color: white;
     font-size: 2em;
     transition: color 0.2s ease-in;
     cursor: pointer; }
-    aside.sidebar i:hover {
-      color: #1a1a1a; }
+    aside.sidebar a i:hover, aside.sidebar i:hover {
+      background-color: #1a1a1a; }
   @media only screen and (min-width: 40.063em) {
     aside.sidebar {
       padding-left: 0.9375rem;
@@ -3770,11 +3770,11 @@ aside.sidebar {
         color: black; }
       aside.sidebar h3 {
         border-color: black; }
-      aside.sidebar i {
+      aside.sidebar a i, aside.sidebar i {
         color: white;
         background-color: black; }
-        aside.sidebar i:hover {
-          color: #1a1a1a; } }
+        aside.sidebar a i:hover, aside.sidebar i:hover {
+          background-color: #1a1a1a !important; } }
 
 footer {
   width: 100%;

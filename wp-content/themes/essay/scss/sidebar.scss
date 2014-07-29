@@ -26,14 +26,14 @@ aside.sidebar {
     font-family: Georgia;
     color: white;
   }
-  i {
+  a i, i {
     color: black;
     background-color: white;
     font-size: 2em;
     transition: color 0.2s ease-in;
     cursor: pointer;
     &:hover {
-      color: #1a1a1a;
+      background-color: #1a1a1a;
     }
   }
   @media #{$medium-up} {
@@ -47,11 +47,11 @@ aside.sidebar {
     h3 {
       border-color: black;
     }
-    i {
+   a i, i {
       color: white;
       background-color: black;
       &:hover {
-        color: #1a1a1a;
+        background-color: #1a1a1a !important;
       }
     }
 

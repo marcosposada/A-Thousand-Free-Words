@@ -40,13 +40,14 @@ form {
 }
 
 a i, i {
-  border-radius: 30px;
-  padding: 10px;
+
   background-color: black;
   color: white;
-  font-size: 20px !important;
-  box-sizing: content-box;
-
+  font-size: 18px;
+  padding: 5px;
+  &:hover {
+    background-color: #1a1a1a;
+  }
 }
 
 .circular {
