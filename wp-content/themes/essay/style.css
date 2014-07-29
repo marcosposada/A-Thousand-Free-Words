@@ -3639,6 +3639,23 @@ form {
   form input[type="text"], form textarea {
     border-radius: 5px; }
 
+a i, i {
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  padding: 10px; }
+
+.circular {
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  background: url(images/francis-hadid.jpg) no-repeat;
+  float: right;
+  margin: 0 1em;
+  background-size: 75px; }
+
 .header {
   width: 100%;
   margin-left: auto;
@@ -3732,7 +3749,8 @@ aside.sidebar {
     font-family: Georgia;
     color: white; }
   aside.sidebar i {
-    color: white;
+    color: black;
+    background-color: white;
     font-size: 2em;
     transition: color 0.2s ease-in;
     cursor: pointer; }
@@ -3751,7 +3769,8 @@ aside.sidebar {
       aside.sidebar h3 {
         border-color: black; }
       aside.sidebar i {
-        color: black; }
+        color: white;
+        background-color: black; }
         aside.sidebar i:hover {
           color: #1a1a1a; } }
 

@@ -38,3 +38,22 @@ form {
   }
 
 }
+
+a i, i {
+  border-radius: 30px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.circular {
+  width: 75px;
+  height: 75px;
+  border-radius: 100px;
+  -webkit-border-radius: 100px;
+  -moz-border-radius: 100px;
+  background: url(images/francis-hadid.jpg) no-repeat;
+  float: right;
+  margin: 0 1em;
+  background-size: 75px;
+}
