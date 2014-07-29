@@ -3859,7 +3859,7 @@ article {
     line-height: 1em;
     font-size: 5em; }
   .single .post h1 {
-    margin: 0.75em 0; }
+    margin: 0.75em 0 0.25em 0; }
 
 .comments-wrapper {
   border-top: 1px solid black;
