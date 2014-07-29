@@ -3641,9 +3641,11 @@ form {
 
 a i, i {
   border-radius: 30px;
+  padding: 10px;
   background-color: black;
   color: white;
-  padding: 10px; }
+  font-size: 20px !important;
+  box-sizing: content-box; }
 
 .circular {
   width: 75px;
