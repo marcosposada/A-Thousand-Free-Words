@@ -15,6 +15,7 @@
         <?php if ( has_post_thumbnail()) : // Check if thumbnail exists ?>
             <a class="post-thumbnail" href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
                 <?php the_post_thumbnail('full'); // Declare pixel size you need inside the array ?>
+                <?php the_post_thumbnail_caption(); ?>
             </a>
         <?php endif; ?>
         <!-- /post thumbnail -->
