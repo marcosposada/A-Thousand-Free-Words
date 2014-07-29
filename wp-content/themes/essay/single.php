@@ -22,7 +22,7 @@
 				<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a>
 			</h1>
 			<!-- /post title -->
-
+            <span class="author"><?php _e( 'By:', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
 
 
 

@@ -8,7 +8,7 @@
 
 		var post = $('.post');
 
-        if (!post.hasClass('category-an-image-is-worth-a-1000-words')) {
+        if (!post.hasClass('has-post-thumbnail')) {
             $('.single .post p:first').each(function() {
 
                 $(this).html(function (i, html)
