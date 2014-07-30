@@ -3839,7 +3839,7 @@ article {
   .post .date, .post .author {
     font-size: 60%;
     display: block;
-    margin: -5px 0 10px 0;
+    margin: -5px 0 2em 0;
     font-family: sans-serif; }
   .post p {
     font-family: Georgia;
