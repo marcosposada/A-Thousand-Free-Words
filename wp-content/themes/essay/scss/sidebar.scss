@@ -27,13 +27,13 @@ aside.sidebar {
     color: white;
   }
   a i, i {
-    color: black;
-    background-color: white;
-    font-size: 2em;
+    color: white;
     transition: color 0.2s ease-in;
     cursor: pointer;
+    font-size: 2em;
+    margin-left: 5px;
     &:hover {
-      background-color: #1a1a1a;
+      color: #1a1a1a;
     }
   }
   @media #{$medium-up} {
@@ -48,10 +48,10 @@ aside.sidebar {
       border-color: black;
     }
    a i, i {
-      color: white;
-      background-color: black;
+      color: black;
+
       &:hover {
-        background-color: #1a1a1a !important;
+        color: #1a1a1a;
       }
     }
 

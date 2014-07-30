@@ -3639,14 +3639,6 @@ form {
   form input[type="text"], form textarea {
     border-radius: 5px; }
 
-a i, i {
-  background-color: black;
-  color: white;
-  font-size: 18px;
-  padding: 5px; }
-  a i:hover, i:hover {
-    background-color: #1a1a1a; }
-
 .circular {
   width: 75px;
   height: 75px;
@@ -3751,13 +3743,13 @@ aside.sidebar {
     font-family: Georgia;
     color: white; }
   aside.sidebar a i, aside.sidebar i {
-    color: black;
-    background-color: white;
-    font-size: 2em;
+    color: white;
     transition: color 0.2s ease-in;
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 2em;
+    margin-left: 5px; }
     aside.sidebar a i:hover, aside.sidebar i:hover {
-      background-color: #1a1a1a; }
+      color: #1a1a1a; }
   @media only screen and (min-width: 40.063em) {
     aside.sidebar {
       padding-left: 0.9375rem;
@@ -3771,10 +3763,9 @@ aside.sidebar {
       aside.sidebar h3 {
         border-color: black; }
       aside.sidebar a i, aside.sidebar i {
-        color: white;
-        background-color: black; }
+        color: black; }
         aside.sidebar a i:hover, aside.sidebar i:hover {
-          background-color: #1a1a1a !important; } }
+          color: #1a1a1a; } }
 
 footer {
   width: 100%;
