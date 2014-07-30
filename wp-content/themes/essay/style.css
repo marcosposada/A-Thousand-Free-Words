@@ -3724,7 +3724,8 @@ aside.sidebar {
   width: 100%;
   float: left;
   background-color: black;
-  color: white; }
+  color: white;
+  padding-top: 1em; }
   aside.sidebar h3 {
     border-top: 1px solid white;
     margin: 0 0 0.5em 0;
@@ -3757,7 +3758,8 @@ aside.sidebar {
       width: 25%;
       float: left;
       background-color: white;
-      color: black; }
+      color: black;
+      padding-top: 0; }
       aside.sidebar h3, aside.sidebar p {
         color: black; }
       aside.sidebar h3 {
