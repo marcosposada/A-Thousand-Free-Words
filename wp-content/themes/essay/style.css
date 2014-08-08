@@ -3891,4 +3891,7 @@ article {
   display: block;
   float: left; }
 
+.error404 article#post-404 {
+  width: 100%; }
+
 /*# sourceMappingURL=style.css.map */
